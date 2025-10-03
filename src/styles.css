@@ -1,0 +1,23 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+button {
+  margin-left: 5px;
+}
+
+li {
+  margin: 8px 0;
+}
