@@ -142,11 +142,3 @@ li input[type="checkbox"] {
 li span {
   flex: 1;
 }
-
-/* Dark mode for list items */
-.app.dark li {
-  background: #2c2c2c;
-}
-.app.dark li:hover {
-  background: #3a3a3a;
-}
