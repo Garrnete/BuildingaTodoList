@@ -49,6 +49,7 @@ h1 {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+
 .theme-toggle:hover {
   background: #fdcb6e;
 }
@@ -85,10 +86,11 @@ button {
 
 button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button[type="submit"], button:not(:disabled) {
+button[type="submit"],
+button:not(:disabled) {
   background: #74b9ff;
   color: #fff;
 }
@@ -104,9 +106,11 @@ button:disabled {
   color: #fff;
   border-color: #555;
 }
+
 .app.dark button {
   color: #fff;
 }
+
 .app.dark button[type="submit"] {
   background: #0984e3;
 }
@@ -147,6 +151,7 @@ li span {
 .app.dark li {
   background: #2c2c2c;
 }
+
 .app.dark li:hover {
   background: #3a3a3a;
 }

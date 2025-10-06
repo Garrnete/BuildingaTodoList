@@ -1,16 +1,34 @@
-# React + Vite
+# 📝 React Todo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive Todo List application built with **React** using **Context API** and **useReducer**.  
+It supports adding, editing, completing, deleting tasks — and includes a **Dark/Light mode toggle** 🌙☀️.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🧠 State management using `useReducer` + `Context API`
+- 🎨 Dark and Light theme toggle
+- 📝 Add, edit, complete, and delete todos
+- 🧺 Delete button only works for completed items
+- 💾 Optional: remembers theme using `localStorage`
+- 💅 Clean, centered layout with smooth transitions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (Vite or CRA)
+- **JavaScript (ES6+)**
+- **CSS3** (custom styling)
+- **Context API** for global state
+
+---
+
+## 🧱 Project Structure
+src/
+├── App.jsx # Main app layout and form
+├── TodoList.jsx # Renders list of todos
+├── TodoContext.jsx # Global state management
+├── styles.css # Styling and dark mode
+└── index.jsx # Renders the app

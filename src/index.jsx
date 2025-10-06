@@ -5,9 +5,9 @@ import { TodoProvider } from "./TodoContext";
 import "./styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <TodoProvider>
-      <App />
-    </TodoProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <TodoProvider>
+            <App />
+        </TodoProvider>
+    </React.StrictMode>
 );
