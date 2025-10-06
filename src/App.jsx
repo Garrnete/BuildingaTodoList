@@ -1,4 +1,4 @@
-import React, { useState, useReducer} from "react";
+import React, { useState, useReducer } from "react";
 import TodoList from "./TodoList";
 import "./styles.css";
 
@@ -32,6 +32,7 @@ function todoReducer(todos, action) {
 export default function App() {
   const [todos, dispatch] = useReducer(todoReducer, []);
   const [newTask, setNewTask] = useState("");
+  const [theme, setTheme] = useState("light");
 
   function handleAdd(e) {
     e.preventDefault();
@@ -40,9 +41,19 @@ export default function App() {
     setNewTask("");
   }
 
+  function toggleTheme() {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  }
+
   return (
-    <div className="app">
-      <h1>Create Todo List</h1>
+    <div className={`app ${theme}`}>
+      <div className="header">
+        <h1>Create Todo List</h1>
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === "light" ? "🌙 Dark" : "☀️ Light"}
+        </button>
+      </div>
+
       <form onSubmit={handleAdd}>
         <input
           type="text"
@@ -57,5 +68,6 @@ export default function App() {
     </div>
   );
 }
+
 
 
